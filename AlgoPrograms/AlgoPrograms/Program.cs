@@ -9,8 +9,9 @@ namespace AlgoPrograms
     internal class Program
     {
         static void Main(string[] args)
-        {         
+        {       
             Console.WriteLine("Enter 1 for Bubble Sort Problem");
+            Console.WriteLine("Enter 2 for Insertion Sort Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -19,10 +20,16 @@ namespace AlgoPrograms
                     sort.Sort();
                     Console.ReadKey();
                     break;
-                    default:
+                case 2:                   
+                    Insertionsort insert = new Insertionsort();
+                    insert.Sort();                  
+                    break;
+                default:
                     Console.WriteLine("Enter the correct option:");
                     break;
             }
         }
+
+      
     }
 }
