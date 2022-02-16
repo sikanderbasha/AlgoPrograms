@@ -14,6 +14,7 @@ namespace AlgoPrograms
             Console.WriteLine("Enter 2 for Insertion Sort Problem");
             Console.WriteLine("Enter 3 for Anagram Problem");
             Console.WriteLine("Enter 4 for Prime number Problem");
+            Console.WriteLine("Enter 5 for Binary Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -50,8 +51,8 @@ namespace AlgoPrograms
                 case 5:
                     Binarysearch binary = new Binarysearch();
                     Console.WriteLine("Enter a string :");
-                    string userInput = Console.ReadLine();                   
-                    binary.Binary(userInput);
+                    string input = Console.ReadLine();                   
+                    binary.Binary(input);
                     break;
                 default:
                     Console.WriteLine("Enter the correct option:");
