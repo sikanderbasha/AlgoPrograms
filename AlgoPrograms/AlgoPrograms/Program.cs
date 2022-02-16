@@ -14,7 +14,8 @@ namespace AlgoPrograms
             Console.WriteLine("Enter 2 for Insertion Sort Problem");
             Console.WriteLine("Enter 3 for Anagram Problem");
             Console.WriteLine("Enter 4 for Prime number Problem");
-            Console.WriteLine("Enter 5 for Binary Problem");
+            Console.WriteLine("Enter 5 for Binary Search Problem");
+            Console.WriteLine("Enter 5 for Merge sort Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -53,6 +54,24 @@ namespace AlgoPrograms
                     Console.WriteLine("Enter a string :");
                     string input = Console.ReadLine();                   
                     binary.Binary(input);
+                    break;
+                case 6:
+                    int[] numbers = { 38, 27, 43, 3, 9, 82, 10 };
+                    int len = numbers.Length;
+                    Console.WriteLine("Before Merge Sort:");
+                    foreach (int item in numbers)
+                    {
+                        Console.Write(item + " ");
+                    }
+                    Console.WriteLine();
+                    Console.WriteLine("After Merge Sort");
+                    Mergesort Sort = new Mergesort();
+                    Sort.Sort(numbers, 0, len - 1);
+                    foreach (int item in numbers)
+                    {
+                        Console.Write(item + " ");
+                    }
+                    Console.Read();
                     break;
                 default:
                     Console.WriteLine("Enter the correct option:");

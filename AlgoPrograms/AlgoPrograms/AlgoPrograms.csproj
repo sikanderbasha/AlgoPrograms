@@ -47,6 +47,7 @@
     <Compile Include="Binarysearch.cs" />
     <Compile Include="Bubblesort.cs" />
     <Compile Include="Insertionsort.cs" />
+    <Compile Include="Mergesort.cs" />
     <Compile Include="Primenumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
