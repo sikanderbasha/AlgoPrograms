@@ -46,6 +46,7 @@
     <Compile Include="Anagram.cs" />
     <Compile Include="Bubblesort.cs" />
     <Compile Include="Insertionsort.cs" />
+    <Compile Include="Primenumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

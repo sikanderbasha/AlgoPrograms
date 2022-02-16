@@ -13,6 +13,7 @@ namespace AlgoPrograms
             Console.WriteLine("Enter 1 for Bubble Sort Problem");
             Console.WriteLine("Enter 2 for Insertion Sort Problem");
             Console.WriteLine("Enter 3 for Anagram Problem");
+            Console.WriteLine("Enter 4 for Prime number Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,7 +43,10 @@ namespace AlgoPrograms
                     }
                     Console.ReadLine();
                     break;
-
+                case 4:
+                    Primenumber prime = new Primenumber();
+                    prime.Prime();
+                    break;
                 default:
                     Console.WriteLine("Enter the correct option:");
                     break;
