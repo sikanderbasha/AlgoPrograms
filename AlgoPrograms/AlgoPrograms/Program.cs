@@ -47,6 +47,12 @@ namespace AlgoPrograms
                     Primenumber prime = new Primenumber();
                     prime.Prime();
                     break;
+                case 5:
+                    Binarysearch binary = new Binarysearch();
+                    Console.WriteLine("Enter a string :");
+                    string userInput = Console.ReadLine();                   
+                    binary.Binary(userInput);
+                    break;
                 default:
                     Console.WriteLine("Enter the correct option:");
                     break;

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anagram.cs" />
+    <Compile Include="Binarysearch.cs" />
     <Compile Include="Bubblesort.cs" />
     <Compile Include="Insertionsort.cs" />
     <Compile Include="Primenumber.cs" />
