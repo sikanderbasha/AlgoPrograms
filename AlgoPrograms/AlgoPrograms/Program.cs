@@ -12,6 +12,7 @@ namespace AlgoPrograms
         {       
             Console.WriteLine("Enter 1 for Bubble Sort Problem");
             Console.WriteLine("Enter 2 for Insertion Sort Problem");
+            Console.WriteLine("Enter 3 for Anagram Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -24,6 +25,24 @@ namespace AlgoPrograms
                     Insertionsort insert = new Insertionsort();
                     insert.Sort();                  
                     break;
+                case 3:
+                    string first, second;                     
+                    Console.WriteLine("Enter first string");
+                    first = Console.ReadLine();
+                    Console.WriteLine("Enter second string");
+                    second = Console.ReadLine();
+                    Anagram anagram = new Anagram();                    
+                    if (anagram.Checkanagram(first, second) == true)
+                    {
+                        Console.WriteLine("Its a anagram.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Its not a anagram.");
+                    }
+                    Console.ReadLine();
+                    break;
+
                 default:
                     Console.WriteLine("Enter the correct option:");
                     break;
